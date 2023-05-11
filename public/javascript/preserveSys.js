@@ -22,7 +22,7 @@ function sendheartmail() {
   
   console.log(hospitaElement, doctorElement, timeElement, selectionModeElement)
 
-  fetch('http://localhost:3000/sendMail', {
+  fetch('https://hhpap-system.onrender.com/sendMail', {
     method: 'POST',
     body: JSON.stringify({
       name: userName,
