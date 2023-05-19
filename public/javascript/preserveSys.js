@@ -25,6 +25,7 @@ function sendheartmail() {
   fetch('https://hhpap-system.onrender.com/sendMail', {
     method: 'POST',
     body: JSON.stringify({
+      var data;
       name: userName,
       age: userAge,
       mobileNumber: userMobileNumber,
@@ -35,6 +36,15 @@ function sendheartmail() {
       time: timeElement,
       selectionMode: selectionModeElement,
       heartEmail: EmailElement
+      if(selectionMode=='Audo Call'){
+        data = '1234567890'
+      }
+       if(selectionMode=='Virtual Mode'){
+        data = 'meet.google.com/bzg-rrsh-cnx'
+      }
+      if(selectionMode=='Physical Mode'){
+        data = 'https://goo.gl/maps/GawA2c5z9YqifkN37'
+      }
     }),
     headers: {
       "Content-Type": 'application/json'
