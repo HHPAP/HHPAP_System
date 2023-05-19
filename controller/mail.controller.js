@@ -123,6 +123,7 @@ const sendCustomerMail = async function (req, res) {
             <h4>Doctor Name: <span>${req.body.doctor}</span></h4>
             <h4>Time: <span>${req.body.time}</span></h4>
             <h4>Mode: <span>${req.body.selectionMode}</span></h4>
+            <h4>Contact Address: <span>${req.body.data}</span></h4>
           </div>
         </div>
       </div>
